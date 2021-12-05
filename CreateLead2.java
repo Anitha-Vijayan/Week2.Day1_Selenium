@@ -69,12 +69,12 @@ public class CreateLead2 {
 		driver.findElement(By.id("createLeadForm_generalAddress1")).sendKeys("No:1, HL colony");
 		driver.findElement(By.id("createLeadForm_generalAddress2")).sendKeys("Pammal");
 		driver.findElement(By.id("createLeadForm_generalCity")).sendKeys("Chennai");
-		WebElement ele6 = driver.findElement(By.id("createLeadForm_generalCountryGeoId"));
-		Select select6 = new Select(ele6);
-		select6.selectByVisibleText("Australia");
-		//WebElement ele5 = driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
-		//Select select5 =new Select(ele5);
-		//select5.deselectByVisibleText("Victoria");
+		WebElement ele5 = driver.findElement(By.id("createLeadForm_generalCountryGeoId"));
+		Select select5 = new Select(ele5);
+		select5.selectByVisibleText("Australia");
+		WebElement ele6 = driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
+		Select select6 =new Select(ele6);
+		select6.selectByVisibleText("Victoria");
 		driver.findElement(By.id("createLeadForm_generalPostalCodeExt")).sendKeys("001");
 		driver.findElement(By.id("createLeadForm_generalPostalCode")).sendKeys("97601");
 		driver.findElement(By.name("submitButton")).click();
